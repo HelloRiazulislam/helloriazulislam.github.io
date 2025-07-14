@@ -63,7 +63,7 @@ proxies:
 #   type: socks5
 #   server: 103.208.24.89
 #   port: 1088
-- name: "50Mbps-1"
+  - name: "50Mbps-1"
     type: http
     server: 45.115.112.138
     port: 7675
@@ -91,7 +91,7 @@ proxies:
 #   type: socks5
 #   server: 165.22.81.250
 #   port: 1080
-- name: "50Mbps-2"
+  - name: "50Mbps-2"
     type: http
     server: 45.115.112.138
     port: 7675
@@ -155,12 +155,10 @@ proxies:
 #   type: http
 #   server: 80.240.28.118
 #   port: 3129
-
   - name: "ProxyMama Server-1"
     type: http
     server: 121.200.61.221
     port: 6565
-
 # - name: "ProxyMama Server-32"
 #   type: socks5
 #   server: 49.12.15.229
@@ -306,3 +304,4 @@ rules:
   - IP-CIDR,192.168.0.0/16,DIRECT
   - GEOIP,BD,DIRECT
   - MATCH,PROXY
+  
