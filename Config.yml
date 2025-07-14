@@ -91,7 +91,7 @@ proxies:
 #   type: socks5
 #   server: 165.22.81.250
 #   port: 1080
-- name: "50Mbps-1"
+- name: "50Mbps-2"
     type: http
     server: 45.115.112.138
     port: 7675
