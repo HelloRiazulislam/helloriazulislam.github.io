@@ -63,6 +63,10 @@ proxies:
 #   type: socks5
 #   server: 103.208.24.89
 #   port: 1088
+- name: "50Mbps-1"
+    type: http
+    server: 45.115.112.138
+    port: 7675
 # - name: "ProxyMama Server-11"
 #   type: http
 #   server: 195.181.163.74
@@ -87,6 +91,10 @@ proxies:
 #   type: socks5
 #   server: 165.22.81.250
 #   port: 1080
+- name: "50Mbps-1"
+    type: http
+    server: 45.115.112.138
+    port: 7675
 # - name: "ProxyMama Server-17"
 #   type: http
 #   server: 139.59.117.189
@@ -282,6 +290,8 @@ proxy-groups:
     type: select
     proxies:
       - "ProxyMama Server-1"
+      - "50Mbps-1"
+      - "50Mbps-2"
       - DIRECT
       - REJECT
 
