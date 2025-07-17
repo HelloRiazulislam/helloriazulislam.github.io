@@ -1,121 +1,53 @@
-# ------------------------------------------------------------------
-#  Advanced Clash Configuration for Bangladesh (No Emoji Version)
-#  Features:
-#  - Auto-selects the fastest proxy
-#  - Smart routing for local (BD) and international traffic
-#  - Built-in ad blocking
-# ------------------------------------------------------------------
-
-# General settings
-mixed-port: 7890
+port: 7890
+socks-port: 7891
 allow-lan: true
 mode: rule
 log-level: info
-external-controller: '127.0.0.1:9090'
+external-controller: '0.0.0.0:9090'
+# secret: "your_secret_password"
 
-# DNS settings (Fixed with fake-ip and fallback filter)
 dns:
   enable: true
-  listen: '0.0.0.0:53'
-  enhanced-mode: fake-ip
+  listen: 0.0.0.0:53
+  enhanced-mode: redir-host
   nameserver:
-    - 1.1.1.1       # Cloudflare
-    - 8.8.8.8       # Google
-    - 114.114.114.114
+    - 8.8.8.8
+    - 1.1.1.1
+    - 208.67.222.222
   fallback:
-    - 1.0.0.1
     - 8.8.4.4
     - tls://dns.google
-  fallback-filter:
-    geoip: true
-    ipcidr: [240.0.0.0/4]
+    - https://dns.google/dns-query
 
-# Your Active Proxies
 proxies:
   - name: "50Mbps-1"
     type: http
     server: 45.115.112.138
     port: 7675
-  - name: "50Mbps-2"
-    type: http
-    server: 45.115.112.138
-    port: 7675
-  - name: "ProxyMama Server-1"
-    type: http
-    server: 121.200.61.221
-    port: 6565
+    # username: "your_username"
+    # password: "your_password"
 
-# Proxy Groups (Advanced Setup)
 proxy-groups:
-  # This is the main group you will select in your Clash app
-  - name: "Global Policy"
+  - name: "PROXY"
     type: select
-    proxies:
-      - "Auto-Select"
-      - "50Mbps-1"
-      - "50Mbps-2"
-      - "ProxyMama Server-1"
-      - "Local Traffic"
-
-  # Automatically tests and selects the fastest server
-  - name: "Auto-Select"
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300 # Test every 5 minutes
     proxies:
       - "50Mbps-1"
-      - "50Mbps-2"
-      - "ProxyMama Server-1"
-
-  # Policy for Bangladeshi services
-  - name: "Local Traffic"
-    type: select
-    proxies:
-      - DIRECT
-      - "Global Policy"
-
-  # Policy to block ads
-  - name: "Block Ads"
-    type: select
-    proxies:
-      - REJECT
       - DIRECT
 
-# Rules Section (Smarter Routing)
+  - name: "FINAL"
+    type: select
+    proxies:
+      - "PROXY"
+      - DIRECT
+
 rules:
-  # --- Block Ads & Trackers ---
-  - DOMAIN-KEYWORD,ad,Block Ads
-  - DOMAIN-KEYWORD,tracker,Block Ads
-  - DOMAIN-KEYWORD,analytics,Block Ads
-
-  # --- Local Bangladeshi Services (Direct) ---
-  - DOMAIN-SUFFIX,bd,Local Traffic
-  - GEOIP,BD,Local Traffic
-  - DOMAIN-SUFFIX,bkash.com,Local Traffic
-  - DOMAIN-SUFFIX,nagad.com.bd,Local Traffic
-  - DOMAIN-SUFFIX,daraz.com.bd,Local Traffic
-  - DOMAIN-SUFFIX,pathao.com,Local Traffic
-  - DOMAIN-SUFFIX,foodpanda.com.bd,Local Traffic
-  - DOMAIN-SUFFIX,chaldal.com,Local Traffic
-
-  # --- International Services (Proxy) ---
-  - DOMAIN-SUFFIX,g.co,Global Policy
-  - DOMAIN-SUFFIX,google.com,Global Policy
-  - DOMAIN-SUFFIX,facebook.com,Global Policy
-  - DOMAIN-SUFFIX,fbcdn.net,Global Policy
-  - DOMAIN-SUFFIX,youtube.com,Global Policy
-  - DOMAIN-SUFFIX,ytimg.com,Global Policy
-  - DOMAIN-SUFFIX,whatsapp.net,Global Policy
-  - DOMAIN-SUFFIX,netflix.com,Global Policy
-  - DOMAIN-SUFFIX,spotify.com,Global Policy
-  - DOMAIN-SUFFIX,openai.com,Global Policy
-
-  # --- LAN & Private Networks (Direct) ---
+  - DOMAIN-SUFFIX,local,DIRECT
+  - IP-CIDR,127.0.0.0/8,DIRECT
+  - IP-CIDR,172.16.0.0/12,DIRECT
   - IP-CIDR,192.168.0.0/16,DIRECT
   - IP-CIDR,10.0.0.0/8,DIRECT
-  - IP-CIDR,172.16.0.0/12,DIRECT
-  - IP-CIDR,127.0.0.0/8,DIRECT
-
-  # --- All other traffic goes through proxy ---
-  - MATCH,Global Policy
+  - DOMAIN-KEYWORD,ad,REJECT
+  - DOMAIN-KEYWORD,googlead,REJECT
+  - GEOIP,BD,DIRECT
+  - MATCH,FINAL
   
