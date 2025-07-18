@@ -18,133 +18,28 @@ proxies:
     port: 9169
     username: "true"
     password: "true"
-  # Dummy Proxies for ProxyMama50 Server-1
-  - # name: "ProxyMama50 Server-1-Dummy-1"
-  - # name: "ProxyMama50 Server-1-Dummy-2"
-  - # name: "ProxyMama50 Server-1-Dummy-3"
-  - # name: "ProxyMama50 Server-1-Dummy-4"
-  - # name: "ProxyMama50 Server-1-Dummy-5"
-  - # name: "ProxyMama50 Server-1-Dummy-6"
-  - # name: "ProxyMama50 Server-1-Dummy-7"
-  - # name: "ProxyMama50 Server-1-Dummy-8"
-  - # name: "ProxyMama50 Server-1-Dummy-9"
-  - # name: "ProxyMama50 Server-1-Dummy-10"
-  - # name: "ProxyMama50 Server-1-Dummy-11"
-  - # name: "ProxyMama50 Server-1-Dummy-12"
-  - # name: "ProxyMama50 Server-1-Dummy-13"
-  - # name: "ProxyMama50 Server-1-Dummy-14"
-  - # name: "ProxyMama50 Server-1-Dummy-15"
-  - # name: "ProxyMama50 Server-1-Dummy-16"
-  - # name: "ProxyMama50 Server-1-Dummy-17"
-  - # name: "ProxyMama50 Server-1-Dummy-18"
-  - # name: "ProxyMama50 Server-1-Dummy-19"
-  - # name: "ProxyMama50 Server-1-Dummy-20"
   - name: "ProxyMama50 Server-2" # This was Server-3
     type: socks5
     server: 103.143.139.173
     port: 6969
     username: '@bdiix_bypass'
     password: '@bdiix_bypass'
-  # Dummy Proxies for ProxyMama50 Server-2
-  - # name: "ProxyMama50 Server-2-Dummy-1"
-  - # name: "ProxyMama50 Server-2-Dummy-2"
-  - # name: "ProxyMama50 Server-2-Dummy-3"
-  - # name: "ProxyMama50 Server-2-Dummy-4"
-  - # name: "ProxyMama50 Server-2-Dummy-5"
-  - # name: "ProxyMama50 Server-2-Dummy-6"
-  - # name: "ProxyMama50 Server-2-Dummy-7"
-  - # name: "ProxyMama50 Server-2-Dummy-8"
-  - # name: "ProxyMama50 Server-2-Dummy-9"
-  - # name: "ProxyMama50 Server-2-Dummy-10"
-  - # name: "ProxyMama50 Server-2-Dummy-11"
-  - # name: "ProxyMama50 Server-2-Dummy-12"
-  - # name: "ProxyMama50 Server-2-Dummy-13"
-  - # name: "ProxyMama50 Server-2-Dummy-14"
-  - # name: "ProxyMama50 Server-2-Dummy-15"
-  - # name: "ProxyMama50 Server-2-Dummy-16"
-  - # name: "ProxyMama50 Server-2-Dummy-17"
-  - # name: "ProxyMama50 Server-2-Dummy-18"
-  - # name: "ProxyMama50 Server-2-Dummy-19"
-  - # name: "ProxyMama50 Server-2-Dummy-20"
   - name: "ProxyMama50 Server-3" # This was Server-4
     type: socks5
     server: 203.76.220.168
     port: 1052
     username: "exrex"
     password: "exrex"
-  # Dummy Proxies for ProxyMama50 Server-3
-  - # name: "ProxyMama50 Server-3-Dummy-1"
-  - # name: "ProxyMama50 Server-3-Dummy-2"
-  - # name: "ProxyMama50 Server-3-Dummy-3"
-  - # name: "ProxyMama50 Server-3-Dummy-4"
-  - # name: "ProxyMama50 Server-3-Dummy-5"
-  - # name: "ProxyMama50 Server-3-Dummy-6"
-  - # name: "ProxyMama50 Server-3-Dummy-7"
-  - # name: "ProxyMama50 Server-3-Dummy-8"
-  - # name: "ProxyMama50 Server-3-Dummy-9"
-  - # name: "ProxyMama50 Server-3-Dummy-10"
-  - # name: "ProxyMama50 Server-3-Dummy-11"
-  - # name: "ProxyMama50 Server-3-Dummy-12"
-  - # name: "ProxyMama50 Server-3-Dummy-13"
-  - # name: "ProxyMama50 Server-3-Dummy-14"
-  - # name: "ProxyMama50 Server-3-Dummy-15"
-  - # name: "ProxyMama50 Server-3-Dummy-16"
-  - # name: "ProxyMama50 Server-3-Dummy-17"
-  - # name: "ProxyMama50 Server-3-Dummy-18"
-  - # name: "ProxyMama50 Server-3-Dummy-19"
-  - # name: "ProxyMama50 Server-3-Dummy-20"
   - name: "ProxyMama50 Server-4" # This was Server-5
     type: http
     server: 45.115.112.138
     port: 7675
-  # Dummy Proxies for ProxyMama50 Server-4
-  - # name: "ProxyMama50 Server-4-Dummy-1"
-  - # name: "ProxyMama50 Server-4-Dummy-2"
-  - # name: "ProxyMama50 Server-4-Dummy-3"
-  - # name: "ProxyMama50 Server-4-Dummy-4"
-  - # name: "ProxyMama50 Server-4-Dummy-5"
-  - # name: "ProxyMama50 Server-4-Dummy-6"
-  - # name: "ProxyMama50 Server-4-Dummy-7"
-  - # name: "ProxyMama50 Server-4-Dummy-8"
-  - # name: "ProxyMama50 Server-4-Dummy-9"
-  - # name: "ProxyMama50 Server-4-Dummy-10"
-  - # name: "ProxyMama50 Server-4-Dummy-11"
-  - # name: "ProxyMama50 Server-4-Dummy-12"
-  - # name: "ProxyMama50 Server-4-Dummy-13"
-  - # name: "ProxyMama50 Server-4-Dummy-14"
-  - # name: "ProxyMama50 Server-4-Dummy-15"
-  - # name: "ProxyMama50 Server-4-Dummy-16"
-  - # name: "ProxyMama50 Server-4-Dummy-17"
-  - # name: "ProxyMama50 Server-4-Dummy-18"
-  - # name: "ProxyMama50 Server-4-Dummy-19"
-  - # name: "ProxyMama50 Server-4-Dummy-20"
   - name: "ProxyMama50 Server-5" # This was Server-7
     type: socks5
     server: 220.247.165.129
     port: 1088
     username: test
     password: test
-  # Dummy Proxies for ProxyMama50 Server-5
-  - # name: "ProxyMama50 Server-5-Dummy-1"
-  - # name: "ProxyMama50 Server-5-Dummy-2"
-  - # name: "ProxyMama50 Server-5-Dummy-3"
-  - # name: "ProxyMama50 Server-5-Dummy-4"
-  - # name: "ProxyMama50 Server-5-Dummy-5"
-  - # name: "ProxyMama50 Server-5-Dummy-6"
-  - # name: "ProxyMama50 Server-5-Dummy-7"
-  - # name: "ProxyMama50 Server-5-Dummy-8"
-  - # name: "ProxyMama50 Server-5-Dummy-9"
-  - # name: "ProxyMama50 Server-5-Dummy-10"
-  - # name: "ProxyMama50 Server-5-Dummy-11"
-  - # name: "ProxyMama50 Server-5-Dummy-12"
-  - # name: "ProxyMama50 Server-5-Dummy-13"
-  - # name: "ProxyMama50 Server-5-Dummy-14"
-  - # name: "ProxyMama50 Server-5-Dummy-15"
-  - # name: "ProxyMama50 Server-5-Dummy-16"
-  - # name: "ProxyMama50 Server-5-Dummy-17"
-  - # name: "ProxyMama50 Server-5-Dummy-18"
-  - # name: "ProxyMama50 Server-5-Dummy-19"
-  - # name: "ProxyMama50 Server-5-Dummy-20"
 
 # Proxy Groups
 proxy-groups:
