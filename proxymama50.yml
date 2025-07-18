@@ -1,0 +1,182 @@
+# Clash Configuration for ProxyMama50 Servers with Unique Dummy Proxies & Load Balancing
+# Version: 1.0 | Last Updated: 14-Jul-2025
+
+# General Settings
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Rule
+log-level: info
+external-controller: '0.0.0.0:9090'
+secret: ''
+
+# Proxies
+proxies:
+  - name: "ProxyMama50 Server-1" # This was Server-2
+    type: socks5
+    server: 103.186.238.1
+    port: 9169
+    username: "true"
+    password: "true"
+  # Dummy Proxies for ProxyMama50 Server-1
+  - # name: "ProxyMama50 Server-1-Dummy-1"
+  - # name: "ProxyMama50 Server-1-Dummy-2"
+  - # name: "ProxyMama50 Server-1-Dummy-3"
+  - # name: "ProxyMama50 Server-1-Dummy-4"
+  - # name: "ProxyMama50 Server-1-Dummy-5"
+  - # name: "ProxyMama50 Server-1-Dummy-6"
+  - # name: "ProxyMama50 Server-1-Dummy-7"
+  - # name: "ProxyMama50 Server-1-Dummy-8"
+  - # name: "ProxyMama50 Server-1-Dummy-9"
+  - # name: "ProxyMama50 Server-1-Dummy-10"
+  - # name: "ProxyMama50 Server-1-Dummy-11"
+  - # name: "ProxyMama50 Server-1-Dummy-12"
+  - # name: "ProxyMama50 Server-1-Dummy-13"
+  - # name: "ProxyMama50 Server-1-Dummy-14"
+  - # name: "ProxyMama50 Server-1-Dummy-15"
+  - # name: "ProxyMama50 Server-1-Dummy-16"
+  - # name: "ProxyMama50 Server-1-Dummy-17"
+  - # name: "ProxyMama50 Server-1-Dummy-18"
+  - # name: "ProxyMama50 Server-1-Dummy-19"
+  - # name: "ProxyMama50 Server-1-Dummy-20"
+  - name: "ProxyMama50 Server-2" # This was Server-3
+    type: socks5
+    server: 103.143.139.173
+    port: 6969
+    username: '@bdiix_bypass'
+    password: '@bdiix_bypass'
+  # Dummy Proxies for ProxyMama50 Server-2
+  - # name: "ProxyMama50 Server-2-Dummy-1"
+  - # name: "ProxyMama50 Server-2-Dummy-2"
+  - # name: "ProxyMama50 Server-2-Dummy-3"
+  - # name: "ProxyMama50 Server-2-Dummy-4"
+  - # name: "ProxyMama50 Server-2-Dummy-5"
+  - # name: "ProxyMama50 Server-2-Dummy-6"
+  - # name: "ProxyMama50 Server-2-Dummy-7"
+  - # name: "ProxyMama50 Server-2-Dummy-8"
+  - # name: "ProxyMama50 Server-2-Dummy-9"
+  - # name: "ProxyMama50 Server-2-Dummy-10"
+  - # name: "ProxyMama50 Server-2-Dummy-11"
+  - # name: "ProxyMama50 Server-2-Dummy-12"
+  - # name: "ProxyMama50 Server-2-Dummy-13"
+  - # name: "ProxyMama50 Server-2-Dummy-14"
+  - # name: "ProxyMama50 Server-2-Dummy-15"
+  - # name: "ProxyMama50 Server-2-Dummy-16"
+  - # name: "ProxyMama50 Server-2-Dummy-17"
+  - # name: "ProxyMama50 Server-2-Dummy-18"
+  - # name: "ProxyMama50 Server-2-Dummy-19"
+  - # name: "ProxyMama50 Server-2-Dummy-20"
+  - name: "ProxyMama50 Server-3" # This was Server-4
+    type: socks5
+    server: 203.76.220.168
+    port: 1052
+    username: "exrex"
+    password: "exrex"
+  # Dummy Proxies for ProxyMama50 Server-3
+  - # name: "ProxyMama50 Server-3-Dummy-1"
+  - # name: "ProxyMama50 Server-3-Dummy-2"
+  - # name: "ProxyMama50 Server-3-Dummy-3"
+  - # name: "ProxyMama50 Server-3-Dummy-4"
+  - # name: "ProxyMama50 Server-3-Dummy-5"
+  - # name: "ProxyMama50 Server-3-Dummy-6"
+  - # name: "ProxyMama50 Server-3-Dummy-7"
+  - # name: "ProxyMama50 Server-3-Dummy-8"
+  - # name: "ProxyMama50 Server-3-Dummy-9"
+  - # name: "ProxyMama50 Server-3-Dummy-10"
+  - # name: "ProxyMama50 Server-3-Dummy-11"
+  - # name: "ProxyMama50 Server-3-Dummy-12"
+  - # name: "ProxyMama50 Server-3-Dummy-13"
+  - # name: "ProxyMama50 Server-3-Dummy-14"
+  - # name: "ProxyMama50 Server-3-Dummy-15"
+  - # name: "ProxyMama50 Server-3-Dummy-16"
+  - # name: "ProxyMama50 Server-3-Dummy-17"
+  - # name: "ProxyMama50 Server-3-Dummy-18"
+  - # name: "ProxyMama50 Server-3-Dummy-19"
+  - # name: "ProxyMama50 Server-3-Dummy-20"
+  - name: "ProxyMama50 Server-4" # This was Server-5
+    type: http
+    server: 45.115.112.138
+    port: 7675
+  # Dummy Proxies for ProxyMama50 Server-4
+  - # name: "ProxyMama50 Server-4-Dummy-1"
+  - # name: "ProxyMama50 Server-4-Dummy-2"
+  - # name: "ProxyMama50 Server-4-Dummy-3"
+  - # name: "ProxyMama50 Server-4-Dummy-4"
+  - # name: "ProxyMama50 Server-4-Dummy-5"
+  - # name: "ProxyMama50 Server-4-Dummy-6"
+  - # name: "ProxyMama50 Server-4-Dummy-7"
+  - # name: "ProxyMama50 Server-4-Dummy-8"
+  - # name: "ProxyMama50 Server-4-Dummy-9"
+  - # name: "ProxyMama50 Server-4-Dummy-10"
+  - # name: "ProxyMama50 Server-4-Dummy-11"
+  - # name: "ProxyMama50 Server-4-Dummy-12"
+  - # name: "ProxyMama50 Server-4-Dummy-13"
+  - # name: "ProxyMama50 Server-4-Dummy-14"
+  - # name: "ProxyMama50 Server-4-Dummy-15"
+  - # name: "ProxyMama50 Server-4-Dummy-16"
+  - # name: "ProxyMama50 Server-4-Dummy-17"
+  - # name: "ProxyMama50 Server-4-Dummy-18"
+  - # name: "ProxyMama50 Server-4-Dummy-19"
+  - # name: "ProxyMama50 Server-4-Dummy-20"
+  - name: "ProxyMama50 Server-5" # This was Server-7
+    type: socks5
+    server: 220.247.165.129
+    port: 1088
+    username: test
+    password: test
+  # Dummy Proxies for ProxyMama50 Server-5
+  - # name: "ProxyMama50 Server-5-Dummy-1"
+  - # name: "ProxyMama50 Server-5-Dummy-2"
+  - # name: "ProxyMama50 Server-5-Dummy-3"
+  - # name: "ProxyMama50 Server-5-Dummy-4"
+  - # name: "ProxyMama50 Server-5-Dummy-5"
+  - # name: "ProxyMama50 Server-5-Dummy-6"
+  - # name: "ProxyMama50 Server-5-Dummy-7"
+  - # name: "ProxyMama50 Server-5-Dummy-8"
+  - # name: "ProxyMama50 Server-5-Dummy-9"
+  - # name: "ProxyMama50 Server-5-Dummy-10"
+  - # name: "ProxyMama50 Server-5-Dummy-11"
+  - # name: "ProxyMama50 Server-5-Dummy-12"
+  - # name: "ProxyMama50 Server-5-Dummy-13"
+  - # name: "ProxyMama50 Server-5-Dummy-14"
+  - # name: "ProxyMama50 Server-5-Dummy-15"
+  - # name: "ProxyMama50 Server-5-Dummy-16"
+  - # name: "ProxyMama50 Server-5-Dummy-17"
+  - # name: "ProxyMama50 Server-5-Dummy-18"
+  - # name: "ProxyMama50 Server-5-Dummy-19"
+  - # name: "ProxyMama50 Server-5-Dummy-20"
+
+# Proxy Groups
+proxy-groups:
+  - name: "ProxyMama50-Selector"
+    type: select
+    proxies:
+      - "ProxyMama50-Load-Balance"
+      - "ProxyMama50 Server-1"
+      - "ProxyMama50 Server-2"
+      - "ProxyMama50 Server-3"
+      - "ProxyMama50 Server-4"
+      - "ProxyMama50 Server-5"
+      - DIRECT
+
+  - name: "ProxyMama50-Load-Balance"
+    type: load-balance
+    strategy: consistent-hashing
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    proxies:
+      - "ProxyMama50 Server-1"
+      - "ProxyMama50 Server-2"
+      - "ProxyMama50 Server-3"
+      - "ProxyMama50 Server-4"
+      - "ProxyMama50 Server-5"
+
+# Rules
+rules:
+  - DOMAIN-SUFFIX,google.com,ProxyMama50-Selector
+  - DOMAIN-SUFFIX,github.com,ProxyMama50-Selector
+  - DOMAIN-KEYWORD,bdixtv,DIRECT
+  - DOMAIN-KEYWORD,bdix,DIRECT
+  - GEOIP,BD,DIRECT
+  - MATCH,ProxyMama50-Selector
+  
