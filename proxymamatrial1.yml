@@ -1,0 +1,311 @@
+# Clash Configuration File for ProxyMama
+# Created by RiR
+
+# General settings
+mixed-port: 7890
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: '127.0.0.1:9090'
+
+# DNS settings
+dns:
+  enable: true
+  listen: '0.0.0.0:53'
+  enhanced-mode: redir-host
+  nameserver:
+    - 1.1.1.1
+    - 8.8.8.8
+    - 114.114.114.114
+  fallback:
+    - 1.0.0.1
+    - 8.8.4.4
+    - tls://dns.google
+
+# Proxies section
+# -----------------
+# This section contains all the proxy servers.
+proxies:
+# - name: "ProxyMama Server-2"
+#   type: socks5
+#   server: 183.45.102.7
+#   port: 8080
+# - name: "ProxyMama Server-3"
+#   type: http
+#   server: 45.112.210.134
+#   port: 3128
+# - name: "ProxyMama Server-4"
+#   type: socks5
+#   server: 119.3.45.199
+#   port: 4145
+# - name: "ProxyMama Server-5"
+#   type: http
+#   server: 202.167.88.23
+#   port: 8888
+# - name: "ProxyMama Server-6"
+#   type: socks5
+#   server: 14.99.121.56
+#   port: 1080
+# - name: "ProxyMama Server-7"
+#   type: http
+#   server: 91.207.175.111
+#   port: 5566
+# - name: "ProxyMama Server-8"
+#   type: socks5
+#   server: 177.43.98.201
+#   port: 9050
+# - name: "ProxyMama Server-9"
+#   type: http
+#   server: 88.150.204.12
+#   port: 80
+# - name: "ProxyMama Server-10"
+#   type: socks5
+#   server: 103.208.24.89
+#   port: 1088
+  - name: "50Mbps-1"
+    type: http
+    server: 45.115.112.138
+    port: 7675
+# - name: "ProxyMama Server-11"
+#   type: http
+#   server: 195.181.163.74
+#   port: 3129
+# - name: "ProxyMama Server-12"
+#   type: socks5
+#   server: 81.17.29.115
+#   port: 9999
+# - name: "ProxyMama Server-13"
+#   type: http
+#   server: 46.218.153.200
+#   port: 8081
+# - name: "ProxyMama Server-14"
+#   type: socks5
+#   server: 128.199.236.42
+#   port: 443
+# - name: "ProxyMama Server-15"
+#   type: http
+#   server: 212.118.43.9
+#   port: 8000
+# - name: "ProxyMama Server-16"
+#   type: socks5
+#   server: 165.22.81.250
+#   port: 1080
+  - name: "50Mbps-2"
+    type: http
+    server: 45.115.112.138
+    port: 7675
+# - name: "ProxyMama Server-17"
+#   type: http
+#   server: 139.59.117.189
+#   port: 3128
+# - name: "ProxyMama Server-18"
+#   type: socks5
+#   server: 79.110.52.219
+#   port: 5678
+# - name: "ProxyMama Server-19"
+#   type: http
+#   server: 5.189.141.6
+#   port: 8118
+# - name: "ProxyMama Server-20"
+#   type: socks5
+#   server: 118.69.171.196
+#   port: 9000
+# - name: "ProxyMama Server-21"
+#   type: http
+#   server: 206.189.35.110
+#   port: 8080
+# - name: "ProxyMama Server-22"
+#   type: socks5
+#   server: 95.216.149.208
+#   port: 1080
+# - name: "ProxyMama Server-23"
+#   type: http
+#   server: 159.65.13.116
+#   port: 80
+# - name: "ProxyMama Server-24"
+#   type: socks5
+#   server: 62.210.125.75
+#   port: 4145
+# - name: "ProxyMama Server-25"
+#   type: http
+#   server: 104.248.63.220
+#   port: 8888
+# - name: "ProxyMama Server-26"
+#   type: socks5
+#   server: 188.166.177.126
+#   port: 1088
+# - name: "ProxyMama Server-27"
+#   type: http
+#   server: 37.120.192.154
+#   port: 3128
+# - name: "ProxyMama Server-28"
+#   type: socks5
+#   server: 178.62.90.171
+#   port: 1080
+# - name: "ProxyMama Server-29"
+#   type: http
+#   server: 134.209.29.231
+#   port: 8080
+# - name: "ProxyMama Server-30"
+#   type: socks5
+#   server: 209.97.150.130
+#   port: 9050
+# - name: "ProxyMama Server-31"
+#   type: http
+#   server: 80.240.28.118
+#   port: 3129
+  - name: "ProxyMama Server-1"
+    type: http
+    server: 121.200.61.221
+    port: 6565
+# - name: "ProxyMama Server-32"
+#   type: socks5
+#   server: 49.12.15.229
+#   port: 1080
+# - name: "ProxyMama Server-33"
+#   type: http
+#   server: 198.13.44.174
+#   port: 80
+# - name: "ProxyMama Server-34"
+#   type: socks5
+#   server: 157.230.98.245
+#   port: 4145
+# - name: "ProxyMama Server-35"
+#   type: http
+#   server: 142.93.181.25
+#   port: 8888
+# - name: "ProxyMama Server-36"
+#   type: socks5
+#   server: 167.99.239.112
+#   port: 1088
+# - name: "ProxyMama Server-37"
+#   type: http
+#   server: 138.68.134.148
+#   port: 3128
+# - name: "ProxyMama Server-38"
+#   type: socks5
+#   server: 159.89.202.117
+#   port: 1080
+# - name: "ProxyMama Server-39"
+#   type: http
+#   server: 178.128.119.235
+#   port: 8080
+# - name: "ProxyMama Server-40"
+#   type: socks5
+#   server: 104.131.93.18
+#   port: 9050
+# - name: "ProxyMama Server-41"
+#   type: http
+#   server: 167.71.213.190
+#   port: 3129
+# - name: "ProxyMama Server-42"
+#   type: socks5
+#   server: 161.35.70.164
+#   port: 9999
+# - name: "ProxyMama Server-43"
+#   type: http
+#   server: 134.122.84.156
+#   port: 8081
+# - name: "ProxyMama Server-44"
+#   type: socks5
+#   server: 143.198.214.22
+#   port: 443
+# - name: "ProxyMama Server-45"
+#   type: http
+#   server: 64.225.68.217
+#   port: 8000
+# - name: "ProxyMama Server-46"
+#   type: socks5
+#   server: 143.110.233.111
+#   port: 1080
+# - name: "ProxyMama Server-47"
+#   type: http
+#   server: 157.245.196.229
+#   port: 3128
+# - name: "ProxyMama Server-48"
+#   type: socks5
+#   server: 165.227.158.205
+#   port: 5678
+# - name: "ProxyMama Server-49"
+#   type: http
+#   server: 146.190.134.208
+#   port: 8118
+# - name: "ProxyMama Server-50"
+#   type: socks5
+#   server: 206.189.151.191
+#   port: 9000
+# - name: "ProxyMama Server-51"
+#   type: http
+#   server: 174.138.31.200
+#   port: 8080
+# - name: "ProxyMama Server-52"
+#   type: socks5
+#   server: 139.59.3.235
+#   port: 1080
+# - name: "ProxyMama Server-53"
+#   type: http
+#   server: 159.203.188.11
+#   port: 80
+# - name: "ProxyMama Server-54"
+#   type: socks5
+#   server: 167.172.179.133
+#   port: 4145
+# - name: "ProxyMama Server-55"
+#   type: http
+#   server: 138.197.159.248
+#   port: 8888
+# - name: "ProxyMama Server-56"
+#   type: socks5
+#   server: 159.65.134.203
+#   port: 1088
+# - name: "ProxyMama Server-57"
+#   type: http
+#   server: 68.183.180.195
+#   port: 3128
+# - name: "ProxyMama Server-58"
+#   type: socks5
+#   server: 165.22.213.115
+#   port: 1080
+# - name: "ProxyMama Server-59"
+#   type: http
+#   server: 134.209.155.197
+#   port: 8080
+# - name: "ProxyMama Server-60"
+#   type: socks5
+#   server: 178.62.22.181
+#   port: 9050
+# - name: "ProxyMama Server-61"
+#   type: http
+#   server: 209.97.189.92
+#   port: 3129
+
+# Proxy Groups
+# --------------
+# This section defines how proxies are grouped and selected.
+proxy-groups:
+  - name: "Load Balance Group" # নতুন লোড ব্যালেন্সিং গ্রুপ
+    type: load-balance
+    proxies:
+      - "50Mbps-1"
+      - "50Mbps-2"
+      - "ProxyMama Server-1"
+    url: "http://www.google.com/generate_204" # আপনার পছন্দের URL ব্যবহার করুন
+    interval: 300 # 300 সেকেন্ডে একবার প্রক্সি চেক করবে (5 মিনিট)
+  - name: "PROXY"
+    type: select
+    proxies:
+      - "Load Balance Group" # লোড ব্যালেন্সিং গ্রুপ এখানে যোগ করা হয়েছে
+      - DIRECT
+      - REJECT
+
+# Rules section
+# -------------
+# Rules define how Clash routes traffic.
+rules:
+  - DOMAIN-SUFFIX,google.com,PROXY
+  - DOMAIN-KEYWORD,facebook,PROXY
+  - DOMAIN-SUFFIX,whatsapp.net,DIRECT
+  - DOMAIN-SUFFIX,bd,DIRECT
+  - IP-CIDR,192.168.0.0/16,DIRECT
+  - GEOIP,BD,DIRECT
+  - MATCH,PROXY
