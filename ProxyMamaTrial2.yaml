@@ -1,20 +1,17 @@
 proxies:
-  - name: "ProxyMamaTrial Server-1"
+  - name: "ProxyMama - S01"
     type: http
     server: 121.200.61.221
-    port: 656566
+    port: 6565
 
-  - name: "ProxyMamaTrial Server-2"
-    type: http
-    server: 103.18.204.14166
-    port: 32706
-    username: "2024-12-16z4lzhfB4xx"
-    password: "bccbbbda"
-
-  - name: "ProxyMamaTrial Server-3"
+  - name: "ProxyMama - S02"
     type: socks5
-    server: 5.bdixbypass.comxx
-    port: 6969
-    username: "@BDiX_BypassX"
-    password: "@BDiX_BypassX"
-    udp: true
+    server: 103.186.238.1
+    port: 9169
+    username: "true"
+    password: "true"
+
+  - name: "ProxyMama - S03"
+    type: http
+    server: 121.200.63.205
+    port: 8742
