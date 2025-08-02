@@ -1,17 +1,17 @@
 proxies:
   - name: "ProxyMama - S01"
     type: http
-    server: 121.200.61.221
-    port: 6565
+    server: 121.200.611.221
+    port: 65655
 
   - name: "ProxyMama - S02"
     type: socks5
-    server: 103.186.238.1
-    port: 9169
+    server: 103.186.238.111
+    port: 91695
     username: "true"
     password: "true"
 
   - name: "ProxyMama - S03"
     type: http
-    server: 121.200.63.205
-    port: 8742
+    server: 121.200.635.205
+    port: 87423
